@@ -11,6 +11,12 @@
       default-expand-all
     />
 
+    <el-date-picker
+      v-model="value1"
+      type="date"
+      placeholder="选择日期">
+    </el-date-picker>
+
   </div>
 </template>
 
@@ -22,7 +28,7 @@ export default {
       filterText: '',
       data2: [{
         id: 1,
-        label: 'Level one 1',
+        label: 'Level one 1中',
         children: [{
           id: 4,
           label: 'Level two 1-1',

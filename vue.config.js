@@ -22,12 +22,13 @@ module.exports = {
    * for example GitHub Pages. If you plan to deploy your site to https://foo.github.io/bar/,
    * then publicPath should be set to "/bar/".
    * In most cases please use '/' !!!
+   * lintOnSave: process.env.NODE_ENV === 'development',
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
   publicPath: '/',
   outputDir: 'dist',
   assetsDir: 'static',
-  lintOnSave: process.env.NODE_ENV === 'development',
+  lintOnSave: false,
   productionSourceMap: false,
   devServer: {
     port: port,
